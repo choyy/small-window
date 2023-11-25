@@ -1,0 +1,46 @@
+/* 自动隐藏面包屑 */
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window) div[data-type="wnd"] .protyle-breadcrumb {
+	height: 38px;
+	margin: 7px 7px -38px 7px;
+	opacity: 0;
+	transition: all 300ms;
+	transform: translateY(-24px);
+	z-index: 8;
+	transition-delay: 500ms;
+	border-radius: 8px;
+	box-shadow: 0 4px 9px rgba(0, 0, 0, .05), 0 1.5px 2.8px rgba(0, 0, 0, .07), 0 0.3px 0.7px rgba(0, 0, 0, .12);
+}
+
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window) div[data-type="wnd"] .protyle-breadcrumb:hover {
+	opacity: 1;
+	z-index: 600;
+	transform: translateY(2px);
+	transition: all 300ms;
+	background: var(--b3-toolbar-blur-background);
+}
+
+/* 自动隐藏右上角窗口按钮 */
+.fn__flex-column.body--window.body--win32>.toolbar__window {
+	opacity: 0;
+	transition: all 800ms;
+}
+
+.fn__flex-column.body--window.body--win32>.toolbar__window:hover {
+	opacity: 1;
+	transition: all 800ms;
+}
+
+/* 编辑区上移 */
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window) div[data-type="wnd"]>.layout-tab-container {
+	margin-top: -45px;
+}
+
+/* 隐藏底部状态条 */
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window)>#status {
+	display: none;
+}
+
+/* 修复 savor 主题鼠标点不到右侧滚动条bug */
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window) #layouts {
+	margin-right: 2px;
+}

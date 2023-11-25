@@ -2,10 +2,10 @@
   "name": "small-window",
   "author": "chooyy",
   "url": "https://github.com/choyy/small-window",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "minAppVersion": "2.10.3",
   "backends": ["windows", "linux", "darwin"],
-  "frontends": ["desktop"],
+  "frontends": ["desktop", "desktop-window"],
   "displayName": {
     "default": "Small Window",
     "zh_CN": "小窗"
