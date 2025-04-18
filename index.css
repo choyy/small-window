@@ -44,3 +44,14 @@
 .fn__flex-column.body--window.body--win32:has(>.toolbar__window) #layouts {
 	margin-right: 2px;
 }
+
+/* 隐藏顶部“新建文档”和“页签切换”按钮 */
+span[data-type="new"],
+span[data-type="more"] {
+	display: none;
+}
+
+/* 隐藏添加标签、添加图标、添加题头图按钮 */
+.protyle-background__action {
+	display: none;
+}
