@@ -2,7 +2,7 @@
   "name": "small-window",
   "author": "chooyy",
   "url": "https://github.com/choyy/small-window",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "minAppVersion": "2.10.3",
   "backends": ["windows", "linux", "darwin"],
   "frontends": ["desktop", "desktop-window"],

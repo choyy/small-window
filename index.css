@@ -35,6 +35,11 @@
 	margin-top: -45px;
 }
 
+/* 隐藏tab栏 */
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window) div[data-type="wnd"]>:first-child {
+	opacity: 0;
+}
+
 /* 隐藏底部状态条 */
 .fn__flex-column.body--window.body--win32:has(>.toolbar__window)>#status {
 	display: none;
@@ -46,12 +51,12 @@
 }
 
 /* 隐藏顶部“新建文档”和“页签切换”按钮 */
-span[data-type="new"],
-span[data-type="more"] {
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window) span[data-type="new"],
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window) span[data-type="more"] {
 	display: none;
 }
 
 /* 隐藏添加标签、添加图标、添加题头图按钮 */
-.protyle-background__action {
+.fn__flex-column.body--window.body--win32:has(>.toolbar__window) .protyle-background__action {
 	display: none;
 }
